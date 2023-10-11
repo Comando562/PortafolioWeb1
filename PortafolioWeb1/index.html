@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Leo</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/img2.png" alt="">
+            </div>
+            <h1>LEO MOYA</h1>
+            <h2>Backend Developer</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/leonardo562/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Comando562"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Leo Moya</span> Soy un apasionado de la Tecnología, graduado de la Licenciatura en Administración de Empresas especializandome actualmente en Programacion Backend Java que busca apoyar al mundo empresarial e implementar las habilidades y el conocimiento para importantes tomas de desciciones empresariales, deseoso de aprender y colaborar con proyectos profesionales.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Email</strong>
+                            leo.moya562@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Ciudad de Mexico, Mexico
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>ESTUDIANTE BACKEND</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>MAESTRIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-chalkboard"></i>
+                            <span>TECNOLOGIAS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Spring Boot</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Aprendizaje Continuo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Operacion de Basde de Datos</h4>
+                        <h4>Excel Basico</h4>
+                        <h4>Ingles Comunicativo Inicial</h4>
+                        <span class="casa">Escuela de Artes y Oficios de Tlalnepantla</span>
+                        <span class="fecha">2008 - 2009</span>
+                        <p>Durante este período, obtuve una comprensión sólida de la gestión de bases de datos, lo que me permite organizar, almacenar y acceder a datos de manera eficiente. Aprendí a utilizar Excel como una herramienta poderosa para analizar datos, crear informes y tomar decisiones informadas. Esta habilidad se ha vuelto esencial en mi enfoque para resolver problemas y tomar decisiones basadas en datos en mi carrera.
+                            Además, también comencé mi viaje en el aprendizaje del idioma inglés con un nivel comunicativo inicial. Esta habilidad me ha permitido establecer comunicación básica en situaciones cotidianas y tengo un fuerte deseo de continuar desarrollando mis habilidades en el idioma.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Licenciatura en Administracion de Empresas</h4>
+                        <span class="casa">Umov Academy</span>
+                        <span class="fecha">2019 - 2022</span>
+                        <p>Soy un licenciado en Administración de Empresas apasionado por la gestión Tecnologica y el desarrollo empresarial. Durante mi formación en Umov Academy, adquirí una base sólida en áreas como planificación estratégica, análisis financiero y liderazgo, lo que me ha permitido desarrollar una comprensión profunda de los principios fundamentales de la administración.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Especializacion backend</h4>
+                        <span class="casa">ALURA LATAM col. con ORACLE</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Este programa de formación intensiva me brindó una oportunidad invaluable para adquirir habilidades especializadas en el mundo del desarrollo de software en el lado del servidor. Esta especialización me ha preparado para enfrentar los desafíos del desarrollo backend de manera efectiva y estoy emocionado por aplicar mis conocimientos y habilidades para contribuir al éxito de mi próximo proyecto o empleador.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Soporte Técnico</h4>
+                        <span class="casa">CyberCafe</span>
+                        <span class="fecha">2012 - 2015</span>
+                        <p>Desarrollé una profunda comprensión de los sistemas informáticos y sus componentes, lo que me permitió diagnosticar y resolver problemas técnicos de manera eficiente. Mi habilidad para mantener y reparar hardware y software fue esencial para asegurar que los clientes disfrutaran de una experiencia libre de problemas. Fui responsable de gestionar aplicaciones que controlaban el acceso y el tiempo de uso de las computadoras, garantizando un entorno de trabajo equitativo y eficaz. Esta responsabilidad me permitió desarrollar habilidades de administración de sistemas y garantizar que el cibercafé funcionara de manera eficiente.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Analista de Datos</h4>
+                        <span class="casa">Fiscalia General de la Justicia de Tamaulipas (SS)</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p> Fui responsable de preparar informes y presentaciones que comunicaban de manera efectiva los hallazgos y las conclusiones derivadas del análisis de datos. Esta habilidad de comunicación desempeñó un papel crucial en el apoyo a investigaciones y procesos judiciales. Durante mi tiempo en la Fiscalía General de Justicia (FGJ), tuve el privilegio de desempeñar un papel fundamental en el análisis de datos, contribuyendo a investigaciones y procedimientos legales críticos. Como analista de datos en la FGJ, me dediqué a examinar y comprender conjuntos de datos complejos relacionados con casos judiciales y actividades de aplicación de la ley.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Analista de Anomalias y Datos Logisticos</h4>
+                        <span class="casa">Secretaria de Seguridad publica de Tamaulipas</span>
+                        <span class="fecha">2021 - 2023</span>
+                        <p>Fui responsable de la preparación de informes detallados que comunicaban de manera efectiva los resultados de mis análisis a las autoridades correspondientes. Mi capacidad para traducir datos crudos en información accionable contribuyó de manera significativa a la toma de decisiones y al logro de los objetivos de seguridad pública. Como analista de datos en este entorno dinámico, me dediqué a examinar y comprender conjuntos de datos provenientes de múltiples fuentes.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>API REST</h3>
+                        <p>Spring Boot</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg.jpg" alt="">
+                    <div class="overlay">
+                        <h3>BYTEBANK</h3>
+                        <p>Transferencias de banca en linea</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg.jpg" alt="">
+                    <div class="overlay">
+                        <h3>ENCRIPTADOR DE TEXTO</h3>
+                        <p>Encripta y desencripta tu texto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Mexico, CDMX, Tlahuac
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 552497-4000 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: leo.moya562@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/leonardo562/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Comando562"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
